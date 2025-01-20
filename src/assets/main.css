@@ -7,9 +7,33 @@
   font-weight: normal;
 }
 
-@media (min-width: 1024px) {
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--vt-c-accent);
+}
+
+h1 {
+  font-weight: 900;
+}
+h2 {
+  font-weight: 700;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  fill: var(--vt-c-accent);
+}
+
+.icon:hover {
+  fill: var(--vt-c-accent-hover);
 }
