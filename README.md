@@ -1,35 +1,30 @@
-# TPH Prueba Técnica - Ilias Otsman
+# Prueba Técnica Front-End: Landing Page con Vue 3
 
-This template should help get you started developing with Vue 3 in Vite.
+## Instrucciones para ejecutar el proyecto
 
-## Recommended IDE Setup
+1. **Clonar el repositorio:**
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Para comenzar, clona este repositorio en tu máquina local usando el siguiente comando:
 
-## Customize configuration
+```bash
+git clone https://github.com/IliasVilux/TPH-Prueba-Tecnica-Ilias-Otsman.git
+```
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+2. **Instalar las dependencias:**
 
-## Project Setup
+Navega al directorio del proyecto y ejecuta el siguiente comando para instalar todas las dependencias necesarias:
 
-```sh
+```bash
+cd TPH-Prueba-Tecnica-Ilias-Otsman
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+3. **Levantar el servidor de desarrollo:**
 
-```sh
+Una vez que las dependencias estén instaladas, puedes levantar el servidor de desarrollo con el siguiente comando:
+
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+¡Y listo! Deberías poder ver la Landing Page en funcionamiento accediendo al link que aparezca, generalmente `http://localhost:5173/`.
