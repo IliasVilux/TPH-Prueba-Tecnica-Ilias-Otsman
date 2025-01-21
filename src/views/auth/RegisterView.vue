@@ -4,8 +4,10 @@ import RegisterForm from '@/components/auth/RegisterForm.vue'
 </script>
 
 <template>
-  <HeaderSimple />
-  <RegisterForm />
+  <main>
+    <HeaderSimple />
+    <RegisterForm />
+  </main>
 </template>
 
 <style></style>

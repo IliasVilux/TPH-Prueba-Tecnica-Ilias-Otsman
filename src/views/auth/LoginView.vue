@@ -4,8 +4,10 @@ import LoginForm from '@/components/auth/LoginForm.vue'
 </script>
 
 <template>
-  <HeaderSimple />
-  <LoginForm />
+  <main>
+    <HeaderSimple />
+    <LoginForm />
+  </main>
 </template>
 
 <style></style>

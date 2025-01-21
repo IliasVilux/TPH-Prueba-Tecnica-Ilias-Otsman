@@ -40,8 +40,8 @@ const handleLogin = async () => {
       class="bg-white rounded-4 p-5 mx-2 mx-md-0 position-relative"
     >
       <div class="mb-3">
-        <h1 class="mb-0">TPH - Prueba técnica</h1>
-        <h4>Inicia sesión</h4>
+        <h1 class="mb-0 fade-in-up">TPH - Prueba técnica</h1>
+        <h4 class="fade-in-up delay-200">Inicia sesión</h4>
       </div>
       <div class="mb-3">
         <label class="form-label">Correo</label>
