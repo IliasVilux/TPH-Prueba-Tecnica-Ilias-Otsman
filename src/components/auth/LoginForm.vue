@@ -35,18 +35,31 @@ const handleLogin = async () => {
   <div class="d-flex align-items-center justify-content-center vh-100 position-relative">
     <div class="background-image"></div>
 
-    <form @submit.prevent="handleLogin" class="bg-white rounded-4 p-5 mx-2 mx-md-0 position-relative">
+    <form
+      @submit.prevent="handleLogin"
+      class="bg-white rounded-4 p-5 mx-2 mx-md-0 position-relative"
+    >
       <div class="mb-3">
         <h1 class="mb-0">TPH - Prueba técnica</h1>
         <h4>Inicia sesión</h4>
       </div>
       <div class="mb-3">
         <label class="form-label">Correo</label>
-        <input type="email" class="form-control" v-model="loginData.email" placeholder="Introduce tu correo">
+        <input
+          type="email"
+          class="form-control"
+          v-model="loginData.email"
+          placeholder="Introduce tu correo"
+        />
       </div>
       <div class="mb-3">
         <label class="form-label">Contraseña</label>
-        <input type="password" class="form-control" v-model="loginData.password" placeholder="Introduce tu contraseña">
+        <input
+          type="password"
+          class="form-control"
+          v-model="loginData.password"
+          placeholder="Introduce tu contraseña"
+        />
       </div>
       <p v-if="error" class="text-danger m-0">{{ error }}</p>
       <div class="d-flex flex-column align-items-center gap-2 mt-3">

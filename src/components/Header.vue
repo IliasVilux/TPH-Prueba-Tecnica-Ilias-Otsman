@@ -20,9 +20,15 @@ const handleLogout = () => {
         <p class="fs-6 fw-lighter lh-1 m-0">Prueba técnica</p>
       </RouterLink>
 
-      <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-        aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler border border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <Svg name="menu" />
       </button>
 
