@@ -42,18 +42,4 @@ const handleLogout = () => {
   </header>
 </template>
 
-<style scoped>
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-ul {
-  display: flex;
-}
-
-li {
-  margin: 0 6px;
-}
-</style>
+<style scoped></style>

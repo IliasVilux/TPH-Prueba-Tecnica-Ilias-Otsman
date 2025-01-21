@@ -1,31 +1,15 @@
-/* color palette from <https://github.com/vuejs/theme> */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-smoke: #c5c5c5;
-  --vt-c-black: #181818;
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-normal-1: #565656;
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-
-  --vt-c-accent: #007bff;
-  --vt-c-accent-hover: #0056b3;
-}
-
-/* semantic color variables for this project */
-:root {
-  --color-background: var(--vt-c-white);
-  --color-border: var(--vt-c-divider-light-1);
-  --color-heading: var(--vt-c-black);
-  --color-text: var(--vt-c-black);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-border: var(--vt-c-divider-dark-1);
-    --color-heading: var(--vt-c-white);
-    --color-text: var(--vt-c-white);
-  }
+  --color-primary: #9b59b6;
+  --color-primary-hover: #8e44ad;
+  --color-background: #efefef;
+  --color-border: #dadada;
+  --color-heading: #1b1f13;
+  --color-text: #1b1f13;
+  --color-text-secondary: #6c6c6c;
+  --color-placeholder: #a1a1a1;
+  --color-white: #fff;
 }
 
 *,
@@ -44,20 +28,10 @@ body {
     color 0.5s,
     background-color 0.5s;
   line-height: 1.6;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  font-size: 15px;
+  font-family: 'Montserrat', serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 14px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
