@@ -13,7 +13,7 @@ const handleLogout = () => {
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg p-0 mt-0 mt-lg-4">
+  <nav class="navbar navbar-expand-lg p-0 mt-0 mt-lg-4 mb-2">
     <div class="container bg-light rounded-pill p-2">
       <RouterLink :to="{ name: 'home' }" class="navbar-brand mx-2 mx-lg-4">
         <h2 class="fs-4 m-0">TPH</h2>

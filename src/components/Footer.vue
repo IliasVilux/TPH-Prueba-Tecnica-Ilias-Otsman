@@ -6,7 +6,7 @@ import Svg from '@/components/Svg.vue'
 </script>
 
 <template>
-  <footer class="bg-light py-5">
+  <footer class="bg-light py-5 mt-5">
     <div class="container">
       <section class="d-md-flex justify-content-between align-items-center">
         <div>
