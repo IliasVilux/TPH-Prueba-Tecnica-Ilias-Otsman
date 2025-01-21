@@ -1,12 +1,37 @@
 <script setup>
+import { useRouter } from 'vue-router'
+import { ref } from 'vue'
+import axios from 'axios'
+
+import { useAuthStore } from '@/stores/auth.js'
 import HeaderSimple from '@/components/HeaderSimple.vue'
-import RegisterForm from '@/components/auth/RegisterForm.vue'
+import AuthForm from '@/components/auth/AuthForm.vue'
+
+const router = useRouter()
+const authStore = useAuthStore()
+const error = ref('')
+
+const handleRegister = async (formData) => {
+  await axios
+    .post('https://reqres.in/api/register', {
+      ...formData
+    })
+    .then((response) => {
+      authStore.setToken(response.data.token)
+      router.push({ name: 'home' })
+    })
+    .catch((err) => {
+      error.value = err.response?.data?.error
+    })
+}
 </script>
 
 <template>
   <main>
     <HeaderSimple />
-    <RegisterForm />
+    <AuthForm mode="register" @emitRegister="handleRegister">
+      <p v-if="error" class="text-danger m-0">{{ error }}</p>
+    </AuthForm>
   </main>
 </template>
 
