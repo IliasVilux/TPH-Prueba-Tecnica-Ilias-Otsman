@@ -1,6 +1,14 @@
 <script setup>
-import { RouterLink, useRoute } from 'vue-router'
+import { RouterLink } from 'vue-router'
+
+import { useAuthStore } from '@/stores/auth.js'
 import links from '@/utils/links.js'
+
+const authStore = useAuthStore()
+
+const handleLogout = () => {
+    authStore.clearToken()
+}
 </script>
 
 <template>
@@ -20,7 +28,10 @@ import links from '@/utils/links.js'
             </ul>
         </nav>
 
-        <div>
+        <div v-if="authStore.token">
+            <button @click="handleLogout">Cerrar sesión</button>
+        </div>
+        <div v-else>
             <RouterLink :to="{ name: 'login' }">
                 <button>Iniciar sesion</button>
             </RouterLink>
