@@ -1,0 +1,14 @@
+$primary: #4338ca;
+$body-bg: #efefef;
+$border-radius: 100px;
+$btn-padding-x: 2.25rem;
+$btn-padding-y: 0.5rem;
+
+$font-family-base: 'Inter', sans-serif;
+
+@import 'bootstrap/scss/bootstrap';
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: $primary;
+}
