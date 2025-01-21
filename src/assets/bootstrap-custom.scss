@@ -12,3 +12,17 @@ $font-family-base: 'Inter', sans-serif;
 .nav-link:hover {
   color: $primary;
 }
+
+a {
+  text-decoration: none;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  fill: inherit;
+}
+
+.icon:hover {
+  fill: $primary;
+}
