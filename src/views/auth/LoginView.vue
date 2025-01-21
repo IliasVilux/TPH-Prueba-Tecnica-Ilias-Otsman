@@ -1,11 +1,11 @@
 <script setup>
-import LoginForm from '@/components/LoginForm.vue'
+import HeaderSimple from '@/components/HeaderSimple.vue'
+import LoginForm from '@/components/auth/LoginForm.vue'
 </script>
 
 <template>
-  <form>
-    <LoginForm />
-  </form>
+  <HeaderSimple />
+  <LoginForm />
 </template>
 
 <style></style>

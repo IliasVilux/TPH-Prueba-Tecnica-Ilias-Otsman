@@ -1,11 +1,11 @@
 <script setup>
-import RegisterForm from '@/components/RegisterForm.vue'
+import HeaderSimple from '@/components/HeaderSimple.vue'
+import RegisterForm from '@/components/auth/RegisterForm.vue'
 </script>
 
 <template>
-  <form>
-    <RegisterForm />
-  </form>
+  <HeaderSimple />
+  <RegisterForm />
 </template>
 
 <style></style>
